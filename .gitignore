@@ -1,0 +1,10 @@
+.DS_Store
+data.tbz2
+data
+spark-3.1.2-bin-hadoop2.7.tgz
+spark-*
+venv
+*.tar.gz
+apache-sedona*
+geotools-wrapper*
+*.ipynb_checkpoints
