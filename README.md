@@ -1,5 +1,10 @@
 # SafeGraph SIGSPATIAL 2021 Workshop
 
+## References
+
+* [Understand Consumer Behavior With Verified Foot Traffic Data](https://www.safegraph.com/events/safegraph-sigspatial-2021)
+* [SIGSPATIAL 2021](https://sigspatial2021.sigspatial.org/) 
+
 ## TL;DR
 
 Fastest way to get up and running
