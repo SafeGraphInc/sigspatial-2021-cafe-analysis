@@ -37,4 +37,5 @@ tar xjf data.tbz2
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-PySpark
+pushd notebooks && PySpark
+popd

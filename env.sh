@@ -1,4 +1,15 @@
 #!/bin/bash 
+java_home=""
+
+if [[ -e /usr/libexec/java_home ]];then
+    java_home=$(/usr/libexec/java_home)
+elif [[ -e /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home ]];then
+    java_home=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+elif [[ -z $JAVA_HOME ]];then
+    echo "Could not determine your JAVA_HOME!"
+fi
+
+export JAVA_HOME=${JAVA_HOME:-$java_home}
 SPARK_VERSION=spark-3.1.2-bin-hadoop2.7
 export SPARK_HOME=$PWD/$SPARK_VERSION
 export PATH=$PATH:$SPARK_HOME/bin
